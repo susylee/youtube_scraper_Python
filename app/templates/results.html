@@ -1,13 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
     <title>results</title>
 </head>
+
 <body>
-   <h1>The results of your search...</h1>
-   
+
+    <main class="container">
+        <h1>Search Results for "{{keyword}}": </h1>
+        <figure>
+        <table role="grid">
+            <thead>
+                <tr>
+                    <th>a</th>
+                    <th>b</th>
+                    <th>c</th>
+                </tr>
+            </thead>
+            <tbody>
+            
+                <tr>
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                </tr>
+            </tbody>
+
+        </table>
+        
+        <form action="{{url_for('index')}}" method="get">
+        <input type="submit" value="return">
+        </form>
+    
+    </figure>
+
+
+
+    </main>
+
 </body>
+
 </html>
