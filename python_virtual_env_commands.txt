@@ -1,0 +1,5 @@
+flask run
+
+source .venv/Scripts/activate -- virtual environment 
+pip freeze > requirements.txt -- library add
+deactivate
